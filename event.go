@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/Comcast/gots"
-	scte35 "github.com/Comcast/gots/scte35"
+	"github.com/Comcast/gots/scte35"
 )
 
 // Event is use to create a xml representation of the scte35 event
