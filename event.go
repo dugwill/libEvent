@@ -13,6 +13,7 @@ import (
 type Event struct {
 	Time          time.Time                `xml:"manifestTime" json:"manifestTime,omitempty"`
 	StreamName    string                   `xml:"streamName,attr" json:"streamName,omitempty"`
+	Origin        string                   `xml:"origin,attr" json:"origin,omitempty"`
 	PeriodID      string                   `xml:"periodId,attr" json:"upid,omitempty"`
 	EventTime     time.Time                `xml:"eventTime,attr" json:"eventTime,omitempty"`
 	EventID       uint32                   `xml:"eventID,attr" json:"eventID,omitempty"`
