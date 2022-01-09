@@ -3,6 +3,7 @@ package libevent
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/Comcast/gots"
@@ -85,4 +86,15 @@ func NewEvent(d []byte) (e *Event, err error) {
 	}
 
 	return e, nil
+}
+
+func (e *Event) StoreEvent(f *os.File) {
+
+	jsonString, err := json.Marshal(e)
+	if err != nil {
+		e := fmt.Sprintf("error marshalling event %v ", err)
+		f.WriteString(e)
+		return
+	}
+	f.WriteString(string(jsonString) + "\n")
 }
