@@ -1,4 +1,4 @@
-package libevent
+package events
 
 import (
 	"encoding/json"
