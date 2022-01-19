@@ -1,2 +1,6 @@
+github.com/Comcast/gots v0.0.0-20200817230342-b943c61de5a1 h1:oYeIalW+OH/qSo6s3s/VllZC/qtbhABEt03sd8OiePU=
+github.com/Comcast/gots v0.0.0-20200817230342-b943c61de5a1/go.mod h1:Mk3QwecRoaG2Qh+uiS8t8IOd7QlKl7Xp1ujNRn/zJxw=
+github.com/Comcast/gots v0.0.0-20201111000122-5e29012f8ad4 h1:UvQnikLBNxwYW/C0CjDhvApVQAQ8tPSeYoPNUzVR4DA=
+github.com/Comcast/gots v0.0.0-20201111000122-5e29012f8ad4/go.mod h1:Mk3QwecRoaG2Qh+uiS8t8IOd7QlKl7Xp1ujNRn/zJxw=
 github.com/Comcast/gots v0.0.0-20210127171640-1e4417348cff h1:iXHd0OjSXyRQBy9HVzgANtjANELd0dhUcZWCyxigOX4=
 github.com/Comcast/gots v0.0.0-20210127171640-1e4417348cff/go.mod h1:Mk3QwecRoaG2Qh+uiS8t8IOd7QlKl7Xp1ujNRn/zJxw=
