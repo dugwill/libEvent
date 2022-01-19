@@ -1,4 +1,4 @@
-package events
+package libevent
 
 import (
 	"encoding/base64"

@@ -1,4 +1,4 @@
-package events
+package libevent
 
 import (
 	"encoding/json"
@@ -79,7 +79,7 @@ func NewEvent(d []byte) (e *Event, err error) {
 					}
 				}
 			} else {
-				err = fmt.Errorf("Could not find Signal")
+				err = fmt.Errorf("could not find signal")
 			}
 
 		}
