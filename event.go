@@ -88,6 +88,7 @@ func NewEvent(d []byte) (e *Event, err error) {
 	return e, nil
 }
 
+// Store Event writes event to given file
 func (e *Event) StoreEvent(f *os.File) {
 
 	jsonString, err := json.Marshal(e)
