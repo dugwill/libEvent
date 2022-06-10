@@ -61,7 +61,7 @@ func NewEvent(d []byte) (e *Event, err error) {
 	}
 
 	for _, desc := range scte.Descriptors() {
-		if desc.TypeID() >= 0x34 && desc.TypeID() <= 0x37 {
+		if desc.TypeID() >= 0x30 && desc.TypeID() <= 0x37 {
 			e.TypeID = desc.TypeID()
 			e.EventID = desc.EventID()
 			if desc.HasDuration() {
