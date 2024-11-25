@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/Comcast/gots"
-	"github.com/Comcast/gots/scte35"
+	"github.com/Comcast/gots/v2"
+	"github.com/Comcast/gots/v2/scte35"
 )
 
 // Event is use to create a xml representation of the scte35 event
@@ -27,7 +27,7 @@ type Event struct {
 	EventJSON     []byte                   `xml:"eventJSON,attr" json:"-"`
 }
 
-//JMarshalEvent returns a []byte containing the marshalled event
+// JMarshalEvent returns a []byte containing the marshalled event
 func (e *Event) JMarshalEvent() (s []byte, err error) {
 
 	s, err = json.MarshalIndent(e, "  ", "  ")
@@ -37,7 +37,7 @@ func (e *Event) JMarshalEvent() (s []byte, err error) {
 	return s, nil
 }
 
-//JUnMarshalEvent UnMarshals a []byte into an event struct
+// JUnMarshalEvent UnMarshals a []byte into an event struct
 func (e *Event) JUnMarshalEvent(s []byte) (err error) {
 
 	err = json.Unmarshal(s, e)
